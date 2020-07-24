@@ -1,0 +1,133 @@
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+}
+
+.main-header{
+	display: flex;
+	justify-content: flex-end;
+	ul{
+		list-style: none;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		li{
+			font-size: 14px;
+			margin: 0 10px;
+			& > img{
+				width: 32px;
+				height: auto;
+				border-radius: 50%;
+				margin-right: 20px;
+			}
+			& > a{
+				color: #000;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.cuadricula{
+	width: 20px;
+	height: 20px;
+	display: grid;
+	grid-template: repeat(3,1fr) / repeat(3,1fr);
+	& .cuadricula-item{
+		align-self: center;
+		justify-self: center;
+		background-color: #737373;
+		width: 5px;
+		height: 5px;
+	}
+}
+
+
+.searchEngine{
+	height: calc(100vh - 160px);
+	display: flex;
+	justify-content: center;
+	& .container{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		& > img{
+			width: 272px;
+			height: auto;
+		}
+		& > form{
+			margin: 20px 0;
+			& > input{
+				width: 580px;
+				border: none;
+				border: 1px solid #e0e1e3;
+				border-radius: 30px;
+				padding: 10px 10px;
+			}
+		}
+		& > p{
+			font-size: 13.5px;
+			font-weight: normal;
+			& a{
+				text-decoration: none;
+				color: #1a0dab;
+				padding-left: 10px;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+
+.buttons{
+	margin: 10px 0;
+	button{
+		border: none;
+		background-color: #f2f2f2;
+		padding: 8px 16px;
+		border-radius: 5px;
+		font-size: 14px;
+		&:hover{
+			border: 1px solid #737373;
+		}
+	}
+}
+
+.main-footer{
+	background-color: #f2f2f2;
+	padding: 0 20px 5px 20px;
+	color: #737373;
+}
+.country{
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+	padding: 10px 0;
+	& > a{
+		text-decoration: none;
+	}
+}
+.links{
+	display: flex;
+	justify-content: space-between;
+	ul{
+		padding: 0;
+		list-style: none;
+		display: flex;
+		li{
+			font-size: 14px;
+			padding-left: 20px;
+			&:nth-child(1){
+				padding-left: 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,185 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-header ul {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-header ul li {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.main-header ul li > img {
+  width: 32px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.main-header ul li > a {
+  color: #000;
+  text-decoration: none;
+}
+
+.main-header ul li > a:hover {
+  text-decoration: underline;
+}
+
+.cuadricula {
+  width: 20px;
+  height: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+  -ms-grid-columns: (1fr)[3];
+      grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+}
+
+.cuadricula .cuadricula-item {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-color: #737373;
+  width: 5px;
+  height: 5px;
+}
+
+.searchEngine {
+  height: calc(100vh - 160px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.searchEngine .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 100px;
+}
+
+.searchEngine .container > img {
+  width: 272px;
+  height: auto;
+}
+
+.searchEngine .container > form {
+  margin: 20px 0;
+}
+
+.searchEngine .container > form > input {
+  width: 580px;
+  border: none;
+  border: 1px solid #e0e1e3;
+  border-radius: 30px;
+  padding: 10px 10px;
+}
+
+.searchEngine .container > p {
+  font-size: 13.5px;
+  font-weight: normal;
+}
+
+.searchEngine .container > p a {
+  text-decoration: none;
+  color: #1a0dab;
+  padding-left: 10px;
+}
+
+.searchEngine .container > p a:hover {
+  text-decoration: underline;
+}
+
+.buttons {
+  margin: 10px 0;
+}
+
+.buttons button {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 8px 16px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.buttons button:hover {
+  border: 1px solid #737373;
+}
+
+.main-footer {
+  background-color: #f2f2f2;
+  padding: 0 20px 5px 20px;
+  color: #737373;
+}
+
+.country {
+  border-top: 1px solid #e4e4e4;
+  border-bottom: 1px solid #e4e4e4;
+  padding: 10px 0;
+}
+
+.country > a {
+  text-decoration: none;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.links ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links ul li {
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+.links ul li:nth-child(1) {
+  padding-left: 0;
+}
+/*# sourceMappingURL=styles.css.map */
